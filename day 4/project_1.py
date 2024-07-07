@@ -12,9 +12,10 @@ treasure_position = input("Where do you want to place treasure: ")
 
 trasure = "X"
 
-horizental = treasure_position[0]
-vertical = treasure_position[1]
+horizental = int(treasure_position[0])-1
+vertical = int(treasure_position[1])-1
 
+map[horizental][vertical] = trasure
 
-
+print(f"{item1}\n{item2}\n{item3}")
 
