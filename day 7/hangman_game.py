@@ -9,6 +9,7 @@ lives = 6
 from hangman_art import logo
 print(logo)
 
+print(blank_list )
 while not end_of_the_game: 
     letter = input("Guess the letter: ").lower()
     print(f"You have already guesses {letter}")
@@ -23,6 +24,7 @@ while not end_of_the_game:
         if lives == 0:
             end_of_the_game = True
             print("You lose.")
+            print(f"The word is {word}")
 
     if "_" not in blank_list:
         end_of_the_game = True
@@ -30,6 +32,7 @@ while not end_of_the_game:
     
     from hangman_art import stages
     print(stages[lives])
+
 
    
         
