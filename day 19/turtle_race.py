@@ -9,7 +9,7 @@ color = ["red", "orange", "yellow", "green", "blue", "purple"]
 y_position = [-70, -40, -10, 20, 50, 80]
 all_turtle = []
 
-for index in range(0,6):
+for index in range(0, 6):
     new_turtle = Turtle(shape="turtle")
     new_turtle.color(color[index])
     new_turtle.penup()
