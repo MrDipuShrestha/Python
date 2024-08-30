@@ -1,6 +1,7 @@
+import turtle
 from turtle import Screen
 from board import Board
-import time
+import  time
 
 screen = Screen()
 screen.setup(width=400, height=400)
@@ -15,4 +16,7 @@ board.draw_horizontal_grid()
 screen.update()
 time.sleep(0.1)
 
-screen.exitonclick()
+screen.listen()
+screen.onscreenclick(board.click_handler)
+
+turtle.mainloop()
