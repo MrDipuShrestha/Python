@@ -4,7 +4,7 @@ from board import Board
 import  time
 
 screen = Screen()
-screen.setup(width=400, height=400)
+screen.setup(width=600, height=600)
 screen.title("tic-tac-toe")
 screen.bgcolor("white")
 screen.tracer(0)
